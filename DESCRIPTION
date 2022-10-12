@@ -1,0 +1,20 @@
+Package: multiserver
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person("Adam", "Richardson", , "adam.richardson2@students.mq.edu.au", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: The package simulates how customers will use a first come, first serve
+  queuing system when there "fate" is predetermined, that is there arrive and service
+  times are set.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+LazyData: true
+Depends: R (>= 2.10)
+Imports: 
+    dplyr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
