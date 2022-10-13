@@ -9,16 +9,15 @@ multiserver(Arrivals, ServiceTimes, NumServers = 1)
 \arguments{
 \item{Arrivals}{The time when the individual arrives to be served}
 
-\item{ServiceTimes}{The time it takes to be serves}
+\item{ServiceTimes}{The time it takes to be served}
 
-\item{NumServers}{How many servers are there}
+\item{NumServers}{The number of servers there are}
 }
 \value{
-A tibble with their time of arrival, the time they are served, who they are served by and when their service ends
+A tibble with their time of arrival, the time they are served, who served them and when their service ends
 }
 \description{
-The function simulates a first come, first serve queuing system when fate
-is the arrival
+The function simulates a first come, first serve queuing system when arrival and service times are predetermined.
 }
 \examples{
 multiserver(Arrivals = 1, ServiceTimes = 2, NumServers = 1)

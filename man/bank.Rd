@@ -9,7 +9,7 @@
 
 \describe{
 \item{arrival_time}{The time of the individuals arrival}
-\item{service_time}{The time the time the individual is served}
+\item{service_time}{The time the individual is served}
 ...
 }
 }

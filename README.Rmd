@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# multiserver
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of multiserver is to simulate how customers use a first come, first served queuing system, when their arrival and service times are already predetermined.
+
+## Installation
+
+You can install the development version of multiserver from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("AdamRichardson1/multiserver")
+```
+
+## Example
+
+This is a basic example which shows you how to use the package with the provided bank data set:
+
+```{r example}
+library(multiserver)
+## basic example code
+data(bank)
+
+multiserver(bank$arrival_time,bank$service_time, 3)
+```
+
+

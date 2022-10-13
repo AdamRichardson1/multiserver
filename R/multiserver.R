@@ -1,13 +1,12 @@
 #' Multiserver
 #'
-#' @description The function simulates a first come, first serve queuing system when fate
-#' is the arrival
+#' @description The function simulates a first come, first serve queuing system when arrival and service times are predetermined.
 #'
 #' @param Arrivals The time when the individual arrives to be served
-#' @param ServiceTimes The time it takes to be serves
-#' @param NumServers How many servers are there
+#' @param ServiceTimes The time it takes to be served
+#' @param NumServers The number of servers there are
 #'
-#' @return A tibble with their time of arrival, the time they are served, who they are served by and when their service ends
+#' @return A tibble with their time of arrival, the time they are served, who served them and when their service ends
 #' @export
 #' @importFrom dplyr tibble
 #'
